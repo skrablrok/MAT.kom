@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+
+
+
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+<link rel="stylesheet" href="kontakt.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="nav_bar">
+            <div class="logo">
+                <a href="index_IT.html"><img src="slike/logotip.png" alt=""></a>
+            </div>
+            <ul class="navlist">
+                <div class="nav-links">
+                    <li><a class="nav_link" id="underline" href="o_nas_IT.html">Chi siamo</a></li>
+                    <li id="dropdown">
+                        <a class="nav_link" id="underline" href="storitve_IT.html">Elenco dei servizi &#9660;</a>
+                        <ul class="dropdown">
+                            <li><a href="kovinske_konstrukcije_IT.html">Strutture metalliche</a></li>
+                            <li><a href="odri_ladje_IT.html">Palchi meccanici, macchinari teatrali per teatri e navi da crociera</a></li>
+                            <li><a href="vodni_izrez_IT.html">Taglio a getto d'acqua abrasivo</a></li>
+                            <li><a href="dvorisce_IT.html">Cancelli da cortile, recinzioni e pensiline</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav_link" id="underline" href="reference_IT.html">Referenze</a></li>
+                    <li><a class="nav_link" id="underline" href="zaposlitev_IT.html">Lavoro</a></li>
+                    <li><a class="nav_link" id="kontakt" href="kontakt_IT.html">Contatto</a></li>
+                    <select class="language-select" onchange="redirectLanguage(this)">
+                        <option value="sl">SI</option>
+                        <option value="en">EN</option>
+                        <option value="de" selected>IT</option>
+                    </select>
+                </div>
+            </ul>
+            <div class="bx bx-menu" id="menu-icon"></div> 
+        </div>   
+    </header>
+
+
+    <main>
+
+        <div class="naslov_kontakt">
+            <h1>contattateci</h1>
+        </div>
+
+
+        <div class="kontaktiraj">
+            
+            <div class="kontakt_in_o_nas">
+            <div class="obrazec">
+                <div class="contact-form-container">
+                    <h2>Contattateci</h2>
+                    <p>Compili il modulo di contatto e Le risponderemo al più presto.</p>
+
+                    <form>
+                        <div class="form-group">
+                            <label for="full-name">Nome <span class="required">*</span></label>
+                            <input type="text" id="first-name" placeholder="Nome" required>
+                            <input type="text" id="last-name" placeholder="Cognome" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">G-mail <span class="required">*</span></label>
+                            <input type="email" id="email" placeholder="nome.cognome@gmail.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tel">Numero di telefono <span></span></label>
+                            <input type="tel" id="tel" placeholder="030 123 456" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Oggetto <span class="required">*</span></label>
+                            <input type="subject" id="subject" placeholder="" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Messaggio <span class="required">*</span></label>
+                            <textarea id="message" placeholder="" required></textarea>
+                        </div>
+
+
+
+
+                        <div class="form-group">
+                            <label for="message">Allegati <span></span></label>
+                            <input type="file">
+                            <input type="file">
+                            
+                        </div>
+
+                        <button type="submit" class="submit-btn">INVIA</button>
+                    </form>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="o_nas">
+                <h2>Numero di telefono:</h2>
+                <div class="tel_st">
+                    <div class="tel1"><h4>Sig. Matjaž Mozetič: </h4><a href="tel:+386 41 724 793"><h4>+386 41 724 793</h4></a></div>
+                    <div class="tel1"><h4>Sig. Mozetič Andraž:</h4><a href="tel:+386 41 253 531"><h4>+386 41 253 531</h4></a></div>
+                </div>
+                
+                <h2>Mail:</h2>
+                <a href="mailto:c.info@matkom.si"><h4> c.info@matkom.si</h4></a>
+                <h2>Dove siamo ubicati:  </h2>
+                <div class="map">
+                    <div class="map1">
+                        <div class="naslov_map"><h3>Sede aziendale:</h3></div>
+                        <div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54754.951433994276!2d13.581153001039754!3d45.92470050266199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477b00fc36457b7f%3A0x56b7a64ef1141ad7!2sMat.Kom%2C%20splo%C5%A1na%20mehani%C4%8Dna%20dela%2C%20d.o.o.!5e1!3m2!1sen!2ssi!4v1741259392545!5m2!1sen!2ssi" width="70%" height="300" style="border-radius:10px; border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                    </div>
+                    <div class="map1">
+                        <div class="naslov_map"><h3>locale produttivo</h3></div>
+                        <div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11189.62775857308!2d13.600513600959369!3d45.892410130272495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477b075cd194517d%3A0xfb1f368208b6113c!2sMat.Kom!5e1!3m2!1sen!2ssi!4v1745496174314!5m2!1sen!2ssi" width="70%" height="300" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                    </div>
+                </div>
+
+                <h6>Nell’ambito dell’attività registrata, ci occupiamo principalmente della produzione di prodotti e attrezzature metalliche, nonché di servizi quali la realizzazione, montaggio e manutenzione di palcoscenici meccanici e macchinari scenici per teatri e navi da crociera, oltre al taglio con getto d’acqua di tutti i tipi di materiali...</h6>
+
+                <div class="gumb_o_nas">
+                    <a href="o_nas.html"><button>Continua a leggere</button></a>
+                    <div class="puscica">
+                        <h2>&#8594</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        </div>
+
+
+
+
+
+
+
+        
+
+    </main>
+
+    <footer>
+        <div class="custom-shape-divider-top-1729687953">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <div class="cela_noga">
+            <br>
+
+            <div class="info">
+                <div class="kontakt">
+                    <div class="naslov_kontakt_noga"><h2 id="info_naslov">contatto</h2></div><br>
+                    <div class="kontakt_podatki_noga">
+                        <div class="tel1"><p>&#9743;</p><a href="tel:+386 41 724 793"><h4>Sig. Mozetič Matjaž: +386 41 724 793</h4></a></div>
+                        <div class="tel1"><p>&#9743;</p><a href="tel:+386 41 253 531"><h4>Sig. Mozetič Andraž: +386 41 253 531</h4></a></div>
+                        <div class="mail"><p>&#9993;</p><a href="mailto:c.info@matkom.si"><h4> c.info@matkom.si</h4></a></div>
+                    </div>
+                </div>
+
+                <div class="lokacija">
+                    <div class="naslov_klokacija_noga"><h2 id="info_naslov">sedi</h2></div><br>
+                    <div class="mape_noga">
+                        <div class="map1">
+                            <a href="#"><h4>Ulica Ivana Regenta 24, <br> 5000 Nova Gorica</h4></a><br>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54754.951433994276!2d13.581153001039754!3d45.92470050266199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477b00fc36457b7f%3A0x56b7a64ef1141ad7!2sMat.Kom%2C%20splo%C5%A1na%20mehani%C4%8Dna%20dela%2C%20d.o.o.!5e1!3m2!1sen!2ssi!4v1741259392545!5m2!1sen!2ssi" width="60%" height="200" style="border-radius:10px; border: 0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div class="map1">
+                            <a href="#"><h4>Miren 178, 5291 Miren, <br> 5000 Nova Gorica</h4></a><br>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30752.73834079895!2d13.613195898922173!3d45.88395697468235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477b075cd194517d%3A0xfb1f368208b6113c!2sMat.Kom!5e1!3m2!1sen!2ssi!4v1745501037120!5m2!1sen!2ssi" width="60%" height="200" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="60%" height="200" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="navlist2">
+                    <div class="naslov_navlist_noga"><h2 id="info_naslov">sottopagine</h2></div><br>
+                    <div class="nav-links2">
+                        <li><a class="nav_link2" href="kontakt_IT.html">Contatto</a></li>
+                        <li><a class="nav_link2" href="o_nas_IT.html">Chi siamo</a></li>
+                        <li><a class="nav_link2" href="storitve_IT.html">Elenco dei servizi</a></li>
+                        <li><a class="nav_link2" href="reference_IT.html">Referenze</a></li>
+                        <li><a class="nav_link2" href="zaposlitev_IT.html">Lavoro</a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+        <div class="avtorske">
+            <p>© 2025 Tutti i diritti riservati | by <a href="https://skrablweb.si" target="_blank">Skrablweb</a> | Condizioni generali</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

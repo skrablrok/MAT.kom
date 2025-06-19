@@ -1,0 +1,815 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins';
+    max-width: 100%;
+    overflow-x: hidden;
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: #000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+ul li a{
+    position: relative; 
+}
+.nav_bar{
+    padding-top: 1%;
+    display: flex;
+    justify-content: center;
+    background: #00000051;
+}
+.nav_bar a{
+    max-width: max-content;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    border-bottom: solid hidden;
+}
+.nav_link:hover{
+    color: #fff;
+    transition: 0.3s;
+    
+}
+.nav_bar li #underline::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: rgb(255, 255, 255);
+    border-radius: 50px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform .3s;
+
+}
+.nav_bar #underline:hover::after{
+    transform-origin: center;
+    transform: scaleX(1);
+
+}
+
+#kontakt{
+    background: #ba0505;
+    padding: .4vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+#kontakt:hover{
+    background: #db0a0a;
+    transition: .5s;
+}
+
+.logo{
+    width: 30%;
+    display: flex;
+
+}
+.logo img{
+    width: clamp(100px, 5vw, 120px);
+
+}
+.nav_bar{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+
+}
+
+.navlist li{
+    display: inline;
+    padding: 20px;
+
+
+}
+
+
+
+/* Dropdown container */
+#dropdown {
+    position: relative; /* Important for positioning dropdown */
+}
+
+.dropdown {
+    display: none; /* Hide the dropdown by default */
+    position: absolute;
+    top: 100%;
+    left: 1vw;
+    background-color: #ba0505;
+    min-width: 180px;
+    z-index: 1000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the dropdown links */
+.dropdown li a {
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+.dropdown li a:hover {
+    background-color: #a50303;
+    transition: .6s;
+}
+
+
+/* Show the dropdown when hovering over the parent item */
+#dropdown:hover .dropdown {
+    display: block;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .navlist {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack items vertically */
+        width: 100%;
+    }
+
+    .nav_link {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    #dropdown .dropdown {
+        position: static; /* Make dropdown behave like a regular list item */
+    }
+    
+    #dropdown:hover .dropdown {
+        display: block;
+        position: static; /* Dropdown list will be in the normal flow */
+    }
+
+    /* Optional: You could add a "hamburger" menu for mobile screens if needed */
+    .hamburger-menu {
+        display: block;
+        background-color: #ba0505;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+#menu-icon{
+    color: white;
+    font-size: 55px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Make sure it's above other content */
+    background: #000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+@media (max-width:1035px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: -1000%;
+        right: 0;
+        width: 250px;
+        height: 70vh;
+        background: #000;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+        overflow: scroll;
+    }
+    .navlist a{
+        padding-top: 2vw;
+        display: flex;
+        margin: 8px 0;
+        margin-left: 0;
+    }
+    .navlist.open{
+        top: 0;
+    }
+}
+
+
+
+
+
+
+.naslov_o_nas{
+    font-variant: small-caps;
+    height: 12vw;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 2vw;
+    justify-content: center;
+    color: #fff;
+    background-color: #ba0505;
+    font-size: clamp(24px, 2vw, 150px);
+}
+@media(max-width:1290px){
+    .naslov_o_nas{
+        height: 15vw;
+    }
+}
+@media(max-width:1039px){
+    .naslov_o_nas{
+        height: 17vw;
+    }
+}
+@media(max-width:909px){
+    .naslov_o_nas{
+        height: 20vw;
+    }
+}
+@media(max-width:741px){
+    .naslov_o_nas{
+        height: 23vw;
+    }
+}
+@media(max-width:639px){
+    .naslov_o_nas{
+        height: 26vw;
+    }
+}
+@media(max-width:550px){
+    .naslov_o_nas{
+        height: 30vw;
+    }
+}
+@media(max-width:463px){
+    .naslov_o_nas{
+        height: 36vw;
+    }
+}
+@media(max-width:379px){
+    .naslov_o_nas{
+        height: 40vw;
+    }
+}
+
+
+.onas{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+.podnaslov_onas{
+    color: #ba0505;
+    font-size: clamp(10px, 1vw, 120px);
+    text-decoration: underline;
+    padding-bottom: .5vw;
+}
+.onas_text{
+    width: 50%;
+}
+
+.onas_besedilo h4{
+    font-weight: 100;
+    font-size: clamp(12px, 1vw, 120px);
+}
+.onas_besedilo h4 b{
+    font-weight: 500;
+}
+.onas_slika{
+    width: 40%;
+}
+.onas_slika img{
+    width: 100%;
+}
+@media(max-width:1125px){
+    .onas{
+        flex-direction: column;
+        gap: 4vw;
+    }
+    .onas_text{
+        width: 70%;
+    }
+    .onas_slika{
+        width: 70%;
+    }
+
+}
+
+.certifikati .podnaslov_certifikati h2{
+    display: flex;
+    justify-content: center;
+    font-size: clamp(20px, 2vw, 120px);
+    font-variant: small-caps;
+    color: #ba0505;
+    font-weight: 400;
+}
+.podnaslov_certifikati h2::before{
+    display: inline-block;
+    align-items: center;
+    content: '';
+    border-top: solid 1px rgb(215, 213, 213);
+    width: 37%;
+    margin-right: 20px;
+    margin-top: 1.7vw;
+}
+.podnaslov_certifikati h2::after{
+    display: inline-block;
+    align-items: center;
+    content: '';
+    border-top: solid 1px rgb(215, 213, 213);
+    width: 37%;   
+    margin-left: 20px;
+    margin-top: 1.7vw;
+}
+@media(max-width:1324px){
+    .podnaslov_certifikati h2::before{
+        width: 35%;
+    }
+    .podnaslov_certifikati h2::after{
+        width: 35%;
+    }
+}
+@media(max-width:729px){
+    .podnaslov_certifikati h2::before{
+        width: 25%;
+    }
+    .podnaslov_certifikati h2::after{
+        width: 25%;
+    }
+}
+@media(max-width:514px){
+    .podnaslov_certifikati h2::before{
+        width: 25%;
+        margin-top: 3vw;
+    }
+    .podnaslov_certifikati h2::after{
+        width: 25%;
+        margin-top: 3vw;
+
+    }
+}
+@media(max-width:468px){
+    .podnaslov_certifikati h2::before{
+        width: 20%;
+        margin-top: 3.2vw;
+    }
+    .podnaslov_certifikati h2::after{
+        width: 20%;
+        margin-top: 3.2vw;
+
+    }
+}
+@media(max-width:415px){
+    .podnaslov_certifikati h2::before{
+        width: 20%;
+        margin-top: 4vw;
+    }
+    .podnaslov_certifikati h2::after{
+        width: 20%;
+        margin-top: 4vw;
+
+    }
+}
+@media(max-width:383px){
+    .podnaslov_certifikati h2::before{
+        width: 15%;
+        margin-top: 4vw;
+    }
+    .podnaslov_certifikati h2::after{
+        width: 15%;
+        margin-top: 4vw;
+
+    }
+}
+
+
+
+.slike_certifikati{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.slika1{
+    width: 15%;
+}
+.slika1 img{
+    width: 100%;
+}
+
+
+
+
+.pred_nogo{
+    padding-top: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5vw;
+}
+.pred_nogo_text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    padding: 5vw;
+    background-image: url(slike/pred_nogo.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    border-radius: 20px;
+    font-size: clamp(16px, 1.3vw, 120px);
+}
+.gumb_pred_nogo button{
+    padding: 20px;
+    width: 30vw;
+    border-radius: 10px;
+    border: none;
+    background-color: #ba0505;
+    color: #fff;
+    font-size: clamp(14px, 1vw, 120px);
+    font-variant: small-caps;
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 19px 38px, rgba(255, 255, 255, 0.22) 0px 15px 12px;
+}
+.gumb_pred_nogo button:hover{
+    cursor: pointer;
+    background: #fff;
+    color: #ba0505;
+    box-shadow: rgba(255, 255, 255, 0.3) 5px 24px 43px, rgba(255, 255, 255, 0.22) 5px 20px 17px;
+
+    transition: .3s;
+}
+@media(max-width:1004px){
+    .pred_nogo_text{
+        width: 60%;
+    }
+}
+@media(max-width:669px){
+    .pred_nogo_text{
+        font-size: clamp(12px, 1.2vw, 120px);
+    }
+    .gumb_pred_nogo button{
+        font-size: clamp(12px, 1vw, 120px);
+    }
+}
+@media(max-width:502px){
+    .pred_nogo_text{
+        width: 80%;
+    }
+}
+@media(max-width:463px){
+    .pred_nogo_text{
+        width: 80%;
+    }
+    .gumb_pred_nogo button{
+        width: 40vw;
+    }
+}
+@media(max-width:376px){
+    .pred_nogo_text{
+        text-align: center;
+    }
+}
+/*5fa269*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background:  #ba0505;
+    color: #FFF;
+}
+.naslov_noga{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cela_noga{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 2vw;
+}
+.info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+}
+.kontakt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 33%;
+}
+.naslov_kontakt_noga{
+    width: fit-content;
+}
+.kontakt_podatki_noga{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.naslov_kontakt_noga::after{
+    content: '';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: solid 2px #fff;
+    width: 50%;
+}
+.naslov_kontakt_noga:hover::after{
+    content: '';
+    display: flex;
+    align-items: center;
+    border-top: solid 2px #fff;
+    width: 100%;
+    transition: .3s;
+}
+.kontakt .mail{
+    display: flex;
+    gap: .3vw;
+    justify-content: center;
+    align-items: flex-end;
+}
+.kontakt .mail h2{
+    font-size: clamp(14px, 1vw, 120px);
+}
+.kontakt .mail h4{
+    padding-left: 0.5vw;
+}
+.kontakt .tel1 {
+    display: flex;
+}
+.kontakt .tel1 h4{
+    padding-left: .3vw;
+    text-decoration: underline;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.lokacija{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 33%;
+}
+.mape_noga .map1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .6vw;
+}
+.naslov_klokacija_noga::after{
+    content: '';
+    display: flex;
+    border-top: solid 2px #fff;
+    width: 45%;
+}
+.naslov_klokacija_noga:hover::after{
+    content: '';
+    display: flex;
+    border-top: solid 2px #fff;
+    width: 100%;
+    transition: .3s;
+}
+
+.info h2{
+    font-weight: bold;
+    font-size: clamp(26px, 2vw, 120px);
+}
+.info h4{
+    font-weight: lighter;
+    font-size: clamp(14px, 1vw, 120px);
+}
+.info a{
+    color: #fff;
+}
+.mape_noga{
+    display: flex;
+    gap: 0vw;
+}
+
+
+@media(max-width:1000px){
+    .lokacija iframe{
+        width: 50%;
+    }
+}
+@media(max-width:1000px){
+    .lokacija iframe{
+        height: 50%;
+    }
+}
+
+
+
+.navlist2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 33%;
+}
+
+.naslov_navlist_noga::after{
+    content: '';
+    display: flex;
+    border-top: solid 2px #fff;
+    width: 40%;
+}
+.naslov_navlist_noga:hover::after{
+    content: '';
+    display: flex;
+    border-top: solid 2px #fff;
+    width: 100%;
+    transition: .3s;
+}
+.nav-links2{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+.nav-links2 a{
+    color: #fff;
+    font-weight: lighter;
+    font-size: clamp(14px, 1vw, 120px);
+}
+
+
+
+
+
+.avtorske{
+    background: #000;
+    display: flex;
+    justify-content: center;
+}
+.avtorske p{
+    padding-top: .5vw;
+    padding-bottom: .5vw;
+    font-size: clamp(8px, .6vw, 120px);
+}
+.avtorske a{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+#info_naslov{
+    font-weight: 500;
+    font-variant: small-caps;
+}
+
+@media(max-width: 977px){
+    .lokacija{
+        width: 40%;
+    }
+}
+@media(max-width: 866px){
+    .mape_noga{
+        flex-direction: column;
+        gap: 2vw;
+    }
+    .mape_noga .map1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .lokacija{
+        width: 33%;
+    }
+}
+@media(max-width: 774px){
+    .lokacija{
+        width: 25%;
+    }
+    .kontakt{
+        width: 40%
+    }
+    .navlist2{
+        width: 35%;
+    }
+}
+@media(max-width: 642px){
+    .lokacija{
+        width: 25%;
+    }
+    .kontakt{
+        width: 45%
+    }
+    .navlist2{
+        width: 30%;
+    }
+}
+@media(max-width:620px){
+    .info{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .kontakt{
+        padding-bottom: 10vw;
+        width: 100%;
+    }
+    .lokacija{
+        padding-bottom: 10vw;
+        width: 100%;
+    }
+    .navlist2{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+.custom-shape-divider-top-1729687953 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.custom-shape-divider-top-1729687953 svg {
+
+    width: calc(178% + 1.3px);
+    height: 140px;
+}
+
+.custom-shape-divider-top-1729687953 .shape-fill {
+    fill: #fff;
+}

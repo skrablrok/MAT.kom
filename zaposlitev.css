@@ -1,0 +1,732 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins';
+    max-width: 100%;
+    overflow-x: hidden;
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: #000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+ul li a{
+    position: relative; 
+}
+.nav_bar{
+    padding-top: 1%;
+    display: flex;
+    justify-content: center;
+    background: #00000051;
+}
+.nav_bar a{
+    max-width: max-content;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    border-bottom: solid hidden;
+}
+.nav_link:hover{
+    color: #fff;
+    transition: 0.3s;
+    
+}
+.nav_bar li #underline::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: rgb(255, 255, 255);
+    border-radius: 50px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform .3s;
+
+}
+.nav_bar #underline:hover::after{
+    transform-origin: center;
+    transform: scaleX(1);
+
+}
+
+#kontakt{
+    background: #ba0505;
+    padding: .4vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+#kontakt:hover{
+    background: #db0a0a;
+    transition: .5s;
+}
+
+.logo{
+    width: 30%;
+    display: flex;
+
+}
+.logo img{
+    width: clamp(100px, 5vw, 120px);
+
+}
+.nav_bar{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+
+}
+
+.navlist li{
+    display: inline;
+    padding: 20px;
+
+
+}
+
+
+
+/* Dropdown container */
+#dropdown {
+    position: relative; /* Important for positioning dropdown */
+}
+
+.dropdown {
+    display: none; /* Hide the dropdown by default */
+    position: absolute;
+    top: 100%;
+    left: 1vw;
+    background-color: #ba0505;
+    min-width: 180px;
+    z-index: 1000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the dropdown links */
+.dropdown li a {
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+.dropdown li a:hover {
+    background-color: #a50303;
+    transition: .6s;
+}
+
+
+/* Show the dropdown when hovering over the parent item */
+#dropdown:hover .dropdown {
+    display: block;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .navlist {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack items vertically */
+        width: 100%;
+    }
+
+    .nav_link {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    #dropdown .dropdown {
+        position: static; /* Make dropdown behave like a regular list item */
+    }
+    
+    #dropdown:hover .dropdown {
+        display: block;
+        position: static; /* Dropdown list will be in the normal flow */
+    }
+
+    /* Optional: You could add a "hamburger" menu for mobile screens if needed */
+    .hamburger-menu {
+        display: block;
+        background-color: #ba0505;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+#menu-icon{
+    color: white;
+    font-size: 55px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Make sure it's above other content */
+    background: #000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+@media (max-width:1035px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: -1000%;
+        right: 0;
+        width: 250px;
+        height: 70vh;
+        background: #000;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+        overflow: scroll;
+    }
+    .navlist a{
+        padding-top: 2vw;
+        display: flex;
+        margin: 8px 0;
+        margin-left: 0;
+    }
+    .navlist.open{
+        top: 0;
+    }
+}
+
+
+
+
+
+
+.naslov_vodni_curek{
+    font-variant: small-caps;
+    height: 12vw;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 2vw;
+    justify-content: center;
+    color: #fff;
+    background-color: #ba0505;
+    font-size: clamp(24px, 2vw, 150px);
+}
+@media(max-width:1290px){
+    .naslov_vodni_curek{
+        height: 15vw;
+    }
+}
+@media(max-width:1039px){
+    .naslov_vodni_curek{
+        height: 17vw;
+    }
+}
+@media(max-width:909px){
+    .naslov_vodni_curek{
+        height: 20vw;
+    }
+}
+@media(max-width:741px){
+    .naslov_vodni_curek{
+        height: 23vw;
+    }
+}
+@media(max-width:639px){
+    .naslov_vodni_curek{
+        height: 26vw;
+    }
+}
+@media(max-width:550px){
+    .naslov_vodni_curek{
+        height: 30vw;
+    }
+}
+@media(max-width:502px){
+    .naslov_vodni_curek{
+        height: 50vw;
+        text-align: center;
+    }
+}
+@media(max-width:408px){
+    .naslov_vodni_curek{
+        height: 60vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+.container {
+    max-width: 900px;
+    margin: 0px auto;
+    padding-bottom: 5vw;
+    padding-top: 5vw;
+}
+@media(max-width:650px){
+    .container{
+        padding-bottom: 10vw;
+    }
+}
+.apply-box {
+    max-width: 600px;
+    padding: 20px;
+
+    margin: 0px auto;
+    margin-top: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+}
+
+.apply-box #naslov{
+    color: #ba0505;
+}
+
+.form-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+input,
+#job_role,
+textarea {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline-color: #ba0505;
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+button {
+    font-size: 1em;
+    background-color: #ba0505;
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    font-variant: small-caps;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #ba0505;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.3) 5px 24px 43px, rgba(0, 0, 0, 0.22) 5px 20px 17px;
+
+}
+
+.textarea-control {
+    grid-column: 1/ span 2;
+
+}
+
+.textarea-control textarea {
+    width: 100%;
+
+}
+
+@media (max-width:460px) {
+    .textarea-control {
+        grid-column: 1/ span 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*5fa269*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background:  #ba0505;
+    color: #FFF;
+}
+.naslov_noga{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cela_noga{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 2vw;
+}
+.info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+}
+.kontakt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 33%;
+}
+.naslov_kontakt_noga{
+    width: fit-content;
+}
+.kontakt_podatki_noga{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.naslov_kontakt_noga::after{
+    content: '';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: solid 2px #fff;
+    width: 50%;
+}
+.naslov_kontakt_noga:hover::after{
+    content: '';
+    display: flex;
+    align-items: center;
+    border-top: solid 2px #fff;
+    width: 100%;
+    transition: .3s;
+}
+.kontakt .mail{
+    display: flex;
+    gap: .3vw;
+    justify-content: center;
+    align-items: flex-end;
+}
+.kontakt .mail h2{
+    font-size: clamp(14px, 1vw, 120px);
+}
+.kontakt .mail h4{
+    padding-left: 0.5vw;
+}
+.kontakt .tel1 {
+    display: flex;
+}
+.kontakt .tel1 h4{
+    padding-left: .3vw;
+    text-decoration: underline;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.lokacija{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 33%;
+}
+.mape_noga .map1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .6vw;
+}
+.naslov_klokacija_noga::after{
+    content: '';
+    display: flex;
+    border-top: solid 2px #fff;
+    width: 45%;
+}
+.naslov_klokacija_noga:hover::after{
+    content: '';
+    display: flex;
+    border-top: solid 2px #fff;
+    width: 100%;
+    transition: .3s;
+}
+
+.info h2{
+    font-weight: bold;
+    font-size: clamp(26px, 2vw, 120px);
+}
+.info h4{
+    font-weight: lighter;
+    font-size: clamp(14px, 1vw, 120px);
+}
+.info a{
+    color: #fff;
+}
+.mape_noga{
+    display: flex;
+    gap: 0vw;
+}
+
+
+@media(max-width:1000px){
+    .lokacija iframe{
+        width: 50%;
+    }
+}
+@media(max-width:1000px){
+    .lokacija iframe{
+        height: 50%;
+    }
+}
+
+
+
+.navlist2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 33%;
+}
+
+.naslov_navlist_noga::after{
+    content: '';
+    display: flex;
+    border-top: solid 2px #fff;
+    width: 40%;
+}
+.naslov_navlist_noga:hover::after{
+    content: '';
+    display: flex;
+    border-top: solid 2px #fff;
+    width: 100%;
+    transition: .3s;
+}
+.nav-links2{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+.nav-links2 a{
+    color: #fff;
+    font-weight: lighter;
+    font-size: clamp(14px, 1vw, 120px);
+}
+
+
+
+
+
+.avtorske{
+    background: #000;
+    display: flex;
+    justify-content: center;
+}
+.avtorske p{
+    padding-top: .5vw;
+    padding-bottom: .5vw;
+    font-size: clamp(8px, .6vw, 120px);
+}
+.avtorske a{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+#info_naslov{
+    font-weight: 500;
+    font-variant: small-caps;
+}
+
+@media(max-width: 977px){
+    .lokacija{
+        width: 40%;
+    }
+}
+@media(max-width: 866px){
+    .mape_noga{
+        flex-direction: column;
+        gap: 2vw;
+    }
+    .mape_noga .map1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .lokacija{
+        width: 33%;
+    }
+}
+@media(max-width: 774px){
+    .lokacija{
+        width: 25%;
+    }
+    .kontakt{
+        width: 40%
+    }
+    .navlist2{
+        width: 35%;
+    }
+}
+@media(max-width: 642px){
+    .lokacija{
+        width: 25%;
+    }
+    .kontakt{
+        width: 45%
+    }
+    .navlist2{
+        width: 30%;
+    }
+}
+@media(max-width:620px){
+    .info{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .kontakt{
+        padding-bottom: 10vw;
+        width: 100%;
+    }
+    .lokacija{
+        padding-bottom: 10vw;
+        width: 100%;
+    }
+    .navlist2{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+.custom-shape-divider-top-1729687953 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.custom-shape-divider-top-1729687953 svg {
+
+    width: calc(178% + 1.3px);
+    height: 140px;
+}
+
+.custom-shape-divider-top-1729687953 .shape-fill {
+    fill: #fff;
+}
