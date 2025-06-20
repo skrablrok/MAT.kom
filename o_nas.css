@@ -336,7 +336,7 @@ ul li a{
     align-items: center;
     content: '';
     border-top: solid 1px rgb(215, 213, 213);
-    width: 30%;
+    width: 35%;
     margin-right: 20px;
     margin-top: 1.7vw;
 }
@@ -345,7 +345,7 @@ ul li a{
     align-items: center;
     content: '';
     border-top: solid 1px rgb(215, 213, 213);
-    width: 30%;   
+    width: 35%;   
     margin-left: 20px;
     margin-top: 1.7vw;
 }
