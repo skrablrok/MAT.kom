@@ -19,6 +19,9 @@ header{
 ul li a{
     position: relative; 
 }
+.language-select{
+    border: none;
+}
 .nav_bar{
     padding-top: 1%;
     display: flex;
