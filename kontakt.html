@@ -73,45 +73,45 @@
                         <h2>Kontaktiraj nas</h2>
                         <p>Izpolni kontaktni obrazec in vam odgovorimo v kratkem</p>
     
-                        <form>
-                            <div class="form-group">
-                                <label for="full-name">Ime <span class="required">*</span></label>
-                                <input type="text" id="first-name" placeholder="ime" required>
-                                <input type="text" id="last-name" placeholder="priimek" required>
-                            </div>
-    
-                            <div class="form-group">
-                                <label for="email">G-mail <span class="required">*</span></label>
-                                <input type="email" id="email" placeholder="ime.priimek@gmail.com" required>
-                            </div>
-    
-                            <div class="form-group">
-                                <label for="tel">Telefonska Številka <span></span></label>
-                                <input type="tel" id="tel" placeholder="030 123 456" required>
-                            </div>
-    
-                            <div class="form-group">
-                                <label for="message">Zadeva <span class="required">*</span></label>
-                                <input type="subject" id="subject" placeholder="" required>
-                            </div>
-    
-                            <div class="form-group">
-                                <label for="message">Sporočilo <span class="required">*</span></label>
-                                <textarea id="message" placeholder="" required></textarea>
-                            </div>
-    
-    
-    
-    
-                            <div class="form-group">
-                                <label for="message">Priloge <span></span></label>
-                                <input type="file">
-                                <input type="file">
-                                
-                            </div>
-    
-                            <button type="submit" class="submit-btn">POŠLJI</button>
-                        </form>
+                        <form action="https://formsubmit.co/c.info@matkom.si" method="POST">
+                        <div class="form-group">
+                            <label for="full-name">Ime <span class="required">*</span></label>
+                            <input type="text" name="Ime" id="first-name" placeholder="ime" required>
+                            <input type="text" name="Priimek" id="last-name" placeholder="priimek" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">G-mail <span class="required">*</span></label>
+                            <input type="email" name="G-mail" id="email" placeholder="ime.priimek@gmail.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tel">Telefonska Številka <span></span></label>
+                            <input type="tel" name="Telefonska številka" id="tel" placeholder="030 123 456" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Zadeva <span class="required">*</span></label>
+                            <input type="subject" name="Zadeva" id="subject" placeholder="" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Sporočilo <span class="required">*</span></label>
+                            <textarea id="message" name="Sporočilo" placeholder="" required></textarea>
+                        </div>
+
+
+
+
+                        <div class="form-group">
+                            <label for="message">Priloge <span></span></label>
+                            <input type="file" name="Priloga 1">
+                            <input type="file" name="Priloga 2">
+                            
+                        </div>
+
+                        <button type="submit" class="submit-btn">POŠLJI</button>
+                    </form>
                     </div>
                 </div>
     
