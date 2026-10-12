@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rok Škrabl">
+    <title>Piškotki | Mat.Kom</title>
+    <link rel="icon" href="slike/logotip.png">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+
+
+
+
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+<link rel="stylesheet" href="pravno.css">
+
+    <link rel="stylesheet" href="cookies.css">
+</head>
+<body>
+    <header>
+        <div class="nav_bar">
+            <div class="logo">
+                <a href="index.html"><img src="slike/logotip.png" alt=""></a>
+            </div>
+            <ul class="navlist">
+                <div class="nav-links">
+                    <li><a class="nav_link" id="underline" href="o_nas.html">O nas</a></li>
+                    <li id="dropdown">
+                        <a class="nav_link" id="underline" href="storitve.html">Seznam storitev &#9660;</a>
+                        <ul class="dropdown">
+                            <li><a href="kovinske_konstrukcije.html">Kovinske konstrukcije</a></li>
+                            <li><a href="odri_ladje.html">Mehanski odri, gledališki stroji za gledališča in potniške ladje</a></li>
+                            <li><a href="vodni_izrez.html">Abrazivni vodni curek</a></li>
+                            <li><a href="dvorisce.html">Dvoriščna vrata ograje in nadstreški</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav_link" id="underline" href="reference.html">Reference</a></li>
+                    <li><a class="nav_link" id="underline" href="zaposlitev.html">Zaposlitev</a></li>
+                    <li><a class="nav_link" id="kontakt"  href="kontakt.html">Kontakt</a></li>
+                    <select class="language-select" onchange="redirectLanguage(this)">
+                        <option value="sl">SI</option>
+                        <option value="en">EN</option>
+                        <option value="it">IT</option>
+                    </select>
+                </div>
+            </ul>
+            <div class="bx bx-menu" id="menu-icon"></div> 
+        </div>   
+
+        
+
+    </header>
+
+
+    <main>
+
+        <div class="naslov_vodni_curek">
+            <h1>politika piškotkov</h1>
+        </div>
+
+        <article class="pravno">
+            <p class="posodobljeno">Zadnja posodobitev: 12. 10. 2026</p>
+
+            <p>Piškotki so majhne besedilne datoteke, ki jih spletna stran shrani v vaš brskalnik. Podobno deluje lokalna shramba brskalnika (localStorage). Spodaj je opisano, katere uporabljamo na spletni strani podjetja Mat.Kom, splošna mehanična dela, d.o.o. in kako lahko upravljate svojo izbiro.</p>
+            <p>Piškotke uporabljamo v skladu z Zakonom o elektronskih komunikacijah (ZEKom-2) in Splošno uredbo o varstvu podatkov (GDPR). Nujno potrebni piškotki ne potrebujejo privolitve, vse ostale pa nastavimo šele, ko jih dovolite.</p>
+
+            <h2>1. Nujno potrebni</h2>
+            <p>Brez teh spletna stran ne more pravilno delovati. Ne potrebujejo privolitve.</p>
+            <div class="tabela"><table><thead><tr><th>Ime</th><th>Ponudnik</th><th>Namen</th><th>Trajanje</th></tr></thead><tbody><tr><td>matkom_cookie_consent<br>(lokalna shramba)</td><td>matkom.si</td><td>Shrani vašo izbiro glede piškotkov.</td><td>12 mesecev</td></tr></tbody></table></div>
+
+            <h2>2. Vsebine tretjih oseb (samo s privolitvijo)</h2>
+            <p>Na straneh prikazujemo Google Zemljevide z lokacijami podjetja. Google ob prikazu zemljevida nastavi svoje piškotke, zato zemljevid naložimo šele, ko kliknete »Sprejmi vse« ali »Prikaži zemljevid«.</p>
+            <div class="tabela"><table><thead><tr><th>Ime</th><th>Ponudnik</th><th>Namen</th><th>Trajanje</th></tr></thead><tbody><tr><td>NID, AEC, SOCS, __Secure-ENID in podobni</td><td>Google (google.com)</td><td>Prikaz zemljevida, shranjevanje nastavitev, varnost in preprečevanje zlorab.</td><td>do 13 mesecev</td></tr></tbody></table></div>
+            <p>Več o tem, kako Google uporablja piškotke: <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener">policies.google.com/technologies/cookies</a>.</p>
+
+            <h2>3. Zunanji viri brez piškotkov</h2>
+            <p>Pisave (Google Fonts), ikone in skripte nalagamo s strežnikov Google, jsDelivr in unpkg. Ti ne nastavljajo piškotkov, vendar ob nalaganju prejmejo vaš IP-naslov, kar je tehnično nujno za prenos vsebine.</p>
+
+            <h2>4. Analitika in oglaševanje</h2>
+            <p>Na spletni strani ne uporabljamo analitičnih, oglaševalskih ali sledilnih piškotkov.</p>
+
+            <h2>5. Upravljanje piškotkov</h2>
+            <p>Svojo izbiro lahko kadar koli spremenite ali prekličete:</p>
+            <p><button type="button" class="gumb_piskotki" data-cookie-settings>Spremeni nastavitve piškotkov</button></p>
+            <p>Piškotke lahko izbrišete ali blokirate tudi v nastavitvah brskalnika (Chrome, Firefox, Safari, Edge). Če jih blokirate, zemljevidi morda ne bodo prikazani.</p>
+            <p>Več o obdelavi osebnih podatkov si preberite v <a href="politika_zasebnosti.html">politiki zasebnosti</a>. Za vprašanja nam pišite na <a href="mailto:c.info@matkom.si">c.info@matkom.si</a>.</p>
+
+        </article>
+
+    </main>
+
+    <footer>
+        <div class="custom-shape-divider-top-1729687953">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div> 
+         
+
+        <div class="cela_noga">
+            
+
+            <br>
+
+
+            <div class="info">
+                <div class="kontakt">
+                    <div class="naslov_kontakt_noga"><h2 id="info_naslov">kontakt</h2></div><br>
+                    <div class="kontakt_podatki_noga">
+                        <div class="tel1"><p>&#9743;</p><a href="tel:+386 41 724 793"><h4>G. Mozetič Matjaž: +386 41 724 793</h4></a></div>
+                        <div class="tel1"><p>&#9743;</p><a href="tel:+386 41 253 531"><h4>G. Mozetič Andraž: +386 41 253 531</h4></a></div>
+                        <div class="mail"><p>&#9993;</p><a href="mailto:c.info@matkom.si"><h4> c.info@matkom.si</h4></a></div>
+                    </div>
+                </div>
+    
+    
+                <div class="lokacija">
+                    <div class="naslov_klokacija_noga"><h2 id="info_naslov">lokacija</h2></div><br>
+                    <div class="mape_noga">
+                        <div class="map1">
+                            <a href="#"><h4>Ulica Ivana Regenta 24, <br> 5000 Nova Gorica</h4></a><br>
+                            <iframe data-cookie-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54754.951433994276!2d13.581153001039754!3d45.92470050266199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477b00fc36457b7f%3A0x56b7a64ef1141ad7!2sMat.Kom%2C%20splo%C5%A1na%20mehani%C4%8Dna%20dela%2C%20d.o.o.!5e1!3m2!1sen!2ssi!4v1741259392545!5m2!1sen!2ssi" width="60%" height="200" style="border-radius:10px; border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="map1">
+                            <a href="#"><h4>Miren 178, 5291 Miren, <br> 5000 Nova Gorica</h4></a><br>
+                            <iframe data-cookie-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30752.73834079895!2d13.613195898922173!3d45.88395697468235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477b075cd194517d%3A0xfb1f368208b6113c!2sMat.Kom!5e1!3m2!1sen!2ssi!4v1745501037120!5m2!1sen!2ssi" width="60%" height="200" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <ul class="navlist2">
+                    <div class="naslov_navlist_noga"><h2 id="info_naslov">podstrani</h2></div><br>
+                    <div class="nav-links2">
+                        <li><a class="nav_link2" href="kontakt.html">Kontakt</a></li>
+                        <li><a class="nav_link2" href="o_nas.html">O nas</a></li>
+                        <li><a class="nav_link2" href="storitve.html">Seznam storitev</a></li>
+                        <li><a class="nav_link2" href="reference.html">Reference</a></li>
+                        <li><a class="nav_link2" href="zaposlitev.html">Zaposlitev</a></li>
+                    </div>
+                </ul>
+
+
+            </div>
+            
+        </div>
+
+        <div class="avtorske">
+            <p>© 2025 Vse pravice pridržane | by <a href="https://skrablweb.si" target="_blank">Skrablweb</a> | <a href="pogoji_poslovanja.html">Pogoji poslovanja</a> | <a href="politika_zasebnosti.html">Politika zasebnosti</a> | <a href="piskotki.html">Piškotki</a> | <a href="#" data-cookie-settings>Nastavitve piškotkov</a></p>
+        </div>
+
+
+
+        
+
+    </footer>
+
+
+
+
+    <script src="index.js"></script>
+    
+    <script src="cookies.js"></script>
+</body>
+</html>

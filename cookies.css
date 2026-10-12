@@ -1,0 +1,136 @@
+/* Cookie consent banner and blocked-map placeholder (used on every page) */
+
+.cookie-banner{
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    z-index: 20000;
+    width: min(900px, calc(100% - 32px));
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 20px 24px;
+    background: #000;
+    color: #fff;
+    border-top: 4px solid #ba0505;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.cookie-banner[hidden]{
+    display: none;
+}
+.cookie-banner h3{
+    font-variant: small-caps;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+.cookie-banner p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.cookie-banner a{
+    color: #fff;
+    text-decoration: underline;
+}
+.cookie-banner-buttons{
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+}
+.cookie-banner button,
+.cookie-map-placeholder button{
+    font-family: inherit;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 2px solid #ba0505;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: none;
+    font-variant: normal;
+}
+.cookie-banner .cookie-accept,
+.cookie-map-placeholder button{
+    background: #ba0505;
+    color: #fff;
+}
+.cookie-banner .cookie-accept:hover,
+.cookie-map-placeholder button:hover{
+    background: #db0a0a;
+    border-color: #db0a0a;
+    color: #fff;
+}
+.cookie-banner .cookie-reject{
+    background: transparent;
+    color: #fff;
+    border-color: #fff;
+}
+.cookie-banner .cookie-reject:hover{
+    background: #fff;
+    color: #000;
+}
+.cookie-banner button:focus-visible,
+.cookie-map-placeholder button:focus-visible{
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+@media(max-width:650px){
+    .cookie-banner{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 14px;
+        bottom: 12px;
+    }
+    .cookie-banner-buttons button{
+        flex: 1;
+    }
+}
+
+.cookie-map-placeholder{
+    box-sizing: border-box;
+    max-width: 100%;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px;
+    text-align: center;
+    background: #1a1a1a;
+    color: #fff;
+    border-radius: 10px;
+    word-break: normal;
+    overflow-wrap: normal;
+}
+.cookie-map-placeholder p{
+    font-size: 12px;
+    font-weight: 300;
+    max-width: 260px;
+}
+
+/* Footer legal links */
+.avtorske a[data-cookie-settings]{
+    cursor: pointer;
+}
+.avtorske p{
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* Privacy note under forms */
+.form-privacy{
+    font-size: 13px;
+    font-weight: 300;
+    color: #555;
+    margin: 12px 0;
+}
+.form-privacy a{
+    color: #ba0505;
+}

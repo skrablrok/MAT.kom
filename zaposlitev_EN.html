@@ -25,6 +25,7 @@
 <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
 <link rel="stylesheet" href="zaposlitev.css">
 
+    <link rel="stylesheet" href="cookies.css">
 </head>
 <body>
     <header>
@@ -75,42 +76,45 @@
             <div class="apply-box">
                 <h1 id="naslov">Job Application</h1>
     
-                <form action="https://formsubmit.co/c.info@matkom.si" method="POST">
+                <form action="https://formsubmit.co/c.info@matkom.si" method="POST" enctype="multipart/form-data">
+                    <input type="hidden" name="_subject" value="New job application">
+                    <input type="hidden" name="_template" value="table">
                     <div class="form-container">
                         <div class="form-control">
                             <label for="first-name">Name</label>
-                            <input type="text" id="first-name" name="first-name" placeholder="Insert your name">
+                            <input type="text" id="first-name" name="First name" placeholder="Insert your name" required>
                         </div>
                         <div class="form-control">
                             <label for="last-name">Surname</label>
-                            <input type="text" id="last-name" name="last-name" placeholder="Insert your surname">
+                            <input type="text" id="last-name" name="Last name" placeholder="Insert your surname" required>
                         </div>
                         <div class="form-control">
                             <label for="email">E-mail</label>
-                            <input type="email" id="email" name="email" placeholder="Insert your E-mail">
+                            <input type="email" id="email" name="E-mail" placeholder="Insert your E-mail" required>
                         </div>
                         <div class="textarea-control">
                             <label for="address">Address</label>
-                            <textarea name="address" id="address" cols="50" rows="4" placeholder="Insert your address"></textarea>
+                            <textarea name="Address" id="address" cols="50" rows="4" placeholder="Insert your address"></textarea>
                             
                         </div>
                         <div class="form-control">
                             <label for="city">City</label>
-                            <input type="text" id="city" name="city" placeholder="Insert a city where you live">
+                            <input type="text" id="city" name="City" placeholder="Insert a city where you live">
                         </div>
                         <div class="form-control">
                             <label for="pincod">ZIP code</label>
-                            <input type="number" id="pincod" name="pincod" placeholder="Inset ZIP code">
+                            <input type="text" inputmode="numeric" id="pincod" name="ZIP code" placeholder="Insert ZIP code">
                         </div>
                         <div class="form-control">
                             <label for="date">Date</label>
-                            <input value="2022-10-24" type="date" id="date" name="date" placeholder="Enter Date">
+                            <input type="date" id="date" name="Date" placeholder="Enter Date">
                         </div>
                         <div class="form-control">
                             <label for="upload">Insert your CV</label>
-                            <input type="file" id="upload" name="upload"/>
+                            <input type="file" id="upload" name="CV" accept=".pdf,.doc,.docx" required>
                         </div>
                     </div>
+                    <p class="form-privacy">We process your application data in accordance with our <a href="politika_zasebnosti_EN.html">privacy policy</a>.</p>
                     <div class="button-container">
                         <button type="submit">send your application</button>
                     </div>
@@ -159,11 +163,11 @@
                     <div class="mape_noga">
                         <div class="map1">
                             <a href="#"><h4>Ulica Ivana Regenta 24, <br> 5000 Nova Gorica</h4></a>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54754.951433994276!2d13.581153001039754!3d45.92470050266199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477b00fc36457b7f%3A0x56b7a64ef1141ad7!2sMat.Kom%2C%20splo%C5%A1na%20mehani%C4%8Dna%20dela%2C%20d.o.o.!5e1!3m2!1sen!2ssi!4v1741259392545!5m2!1sen!2ssi" width="60%" height="200" style="border-radius:10px; border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe data-cookie-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54754.951433994276!2d13.581153001039754!3d45.92470050266199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477b00fc36457b7f%3A0x56b7a64ef1141ad7!2sMat.Kom%2C%20splo%C5%A1na%20mehani%C4%8Dna%20dela%2C%20d.o.o.!5e1!3m2!1sen!2ssi!4v1741259392545!5m2!1sen!2ssi" width="60%" height="200" style="border-radius:10px; border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                         <div class="map1">
                             <a href="#"><h4>Miren 178, 5291 Miren, <br> 5000 Nova Gorica</h4></a>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30752.73834079895!2d13.613195898922173!3d45.88395697468235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477b075cd194517d%3A0xfb1f368208b6113c!2sMat.Kom!5e1!3m2!1sen!2ssi!4v1745501037120!5m2!1sen!2ssi" width="60%" height="200" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe data-cookie-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30752.73834079895!2d13.613195898922173!3d45.88395697468235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477b075cd194517d%3A0xfb1f368208b6113c!2sMat.Kom!5e1!3m2!1sen!2ssi!4v1745501037120!5m2!1sen!2ssi" width="60%" height="200" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
@@ -187,7 +191,7 @@
         </div>
 
         <div class="avtorske">
-            <p>© 2025 All rights reserved | by <a href="https:\\skrablweb.si" target="_blank" >Skrablweb</a> | Terms of Service</p>
+            <p>© 2025 All rights reserved | by <a href="https://skrablweb.si" target="_blank">Skrablweb</a> | <a href="pogoji_poslovanja_EN.html">Terms of Service</a> | <a href="politika_zasebnosti_EN.html">Privacy Policy</a> | <a href="piskotki_EN.html">Cookies</a> | <a href="#" data-cookie-settings>Cookie settings</a></p>
         </div>
 
 
@@ -201,5 +205,6 @@
 
     <script src="index.js"></script>
     
+    <script src="cookies.js"></script>
 </body>
 </html>

@@ -36,7 +36,7 @@ const container = document.querySelector(".counters");
 
 let activated = false;
 
-window.addEventListener("scroll", () => {
+if (container) window.addEventListener("scroll", () => {
     if(
         pageYOffset > container.offsetTop - container.offsetHeight - 200
         && activated === false
@@ -83,6 +83,7 @@ window.addEventListener("scroll", () => {
 
 
 
+if (typeof ScrollReveal !== "undefined") {
 const gumb = ScrollReveal({
     distance: '200px',
     duration: 2600,
@@ -162,6 +163,7 @@ const gumb_storitev = ScrollReveal({
 });
 
 glava.reveal('.gumb_storitev', { origin: 'bottom', delay: 700 });
+}
 
 
 
@@ -206,15 +208,12 @@ glava.reveal('.gumb_storitev', { origin: 'bottom', delay: 700 });
 
 
 
+// Switch to the same page in the chosen language (page.html / page_EN.html / page_IT.html).
 function redirectLanguage(select) {
-    const language = select.value;
-    if (language === "sl") {
-        window.location.href = "index.html";
-    } else if (language === "it") {
-        window.location.href = "index_IT.html";
-    } else if (language === "en") {
-        window.location.href = "index_EN.html";
-    }
+    const suffix = { sl: "", en: "_EN", it: "_IT" }[select.value];
+    let page = location.pathname.split("/").pop() || "index.html";
+    if (page === "404.html" || !page.endsWith(".html")) page = "index.html";
+    window.location.href = page.replace(/(_EN|_IT)?\.html$/i, suffix + ".html");
 }
 
 
