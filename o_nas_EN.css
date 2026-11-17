@@ -795,3 +795,21 @@ footer{
 .custom-shape-divider-top-1729687953 .shape-fill {
     fill: #fff;
 }
+
+/* Široki certifikati (TÜV z QR kodo) */
+.slika1.siroka{
+    width: 24%;
+}
+@media(max-width:768px){
+    .slike_certifikati{
+        flex-wrap: wrap;
+        gap: 6vw;
+        padding: 0 16px;
+    }
+    .slika1{
+        width: 35%;
+    }
+    .slika1.siroka{
+        width: 75%;
+    }
+}

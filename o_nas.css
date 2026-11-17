@@ -17,7 +17,7 @@ header{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 ul li a{
-    position: relative; 
+    position: relative;
 }
 .language-select{
     border: none;
@@ -805,4 +805,22 @@ footer{
 
 .custom-shape-divider-top-1729687953 .shape-fill {
     fill: #fff;
+}
+
+/* Široki certifikati (TÜV z QR kodo) */
+.slika1.siroka{
+    width: 24%;
+}
+@media(max-width:768px){
+    .slike_certifikati{
+        flex-wrap: wrap;
+        gap: 6vw;
+        padding: 0 16px;
+    }
+    .slika1{
+        width: 35%;
+    }
+    .slika1.siroka{
+        width: 75%;
+    }
 }
